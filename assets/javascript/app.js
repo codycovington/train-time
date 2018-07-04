@@ -44,6 +44,12 @@
 
       });
 
+      //Clear input forms
+      $("#trainname-input").val("");
+		  $("#destination-input").val("");
+		  $("#traintime-input").val("");
+		  $("#frequency-input").val("");
+
     });
 
     // Firebase watcher + initial loader HINT: .on("value")
