@@ -76,11 +76,11 @@
 
       // Change the HTML to reflect
      
-      $("#trainname_table").append("<tr><td> " + snapshot.val().trainname + "</td>");
-      $("#destination_table").append("<tr><td>" + snapshot.val().destination + "</td>");
-      $("#frequency_table").append("<tr><td>" + snapshot.val().frequency + "</td></tr>");
-      $("#nextarrival_table").append("<tr><td>" + nextTrainArrival + "</td>");
-      $("#minutesaway_table").append("<tr><td>" + minutes + "</td></tr>");
+      $("#data_table").append("<tr><td> " + snapshot.val().trainname + "</td><td>" + snapshot.val().destination + "</td><td>" + snapshot.val().frequency + "</td><td>" +  nextTrainArrival + "</td><td>" + minutes + "</td></tr>" );
+      //$("#destination_table").append("<tr><td>" + snapshot.val().destination + "</td></tr>");
+      //$("#frequency_table").append("<tr><td>" + snapshot.val().frequency + "</td></tr>");
+      //$("#nextarrival_table").append("<tr><td>" + nextTrainArrival + "</td></tr>");
+      //$("#minutesaway_table").append("<tr><td>" + minutes + "</td></tr></tbody>");
       
 
       // Handle the errors

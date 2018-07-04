@@ -1,7 +1,19 @@
 .container {
     width: 400px;
+    padding: 1em;
+
 }
 
 .jumbotron {
     text-align: center;
+    background-color: lightskyblue;
 }
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+    background-color: lightseagreen;
+  }
+
+#form-header {
+	padding: 2em;	
+}
+

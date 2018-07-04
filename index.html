@@ -12,7 +12,7 @@
 </head>
 <body>
 
-        <div class="jumbotron">
+        <div class="jumbotron border border-success shadow p-3 mb-5 bg-white rounded">
                 <h1 class="display-4">Train Schedule</h1>
                 <p class="lead">Check Times and Destinations</p>
                 
@@ -20,14 +20,14 @@
               </div>
 
 
-        <table class="table">
+        <table class="table table-striped table-hover">
                 <thead>
                   <tr>
-                    <th scope="col" id="trainname">Train Name</th>
-                    <th scope="col" id="destination">Destination</th>
-                    <th scope="col" id="frequency">Frequency (min)</th>
-                    <th scope="col" id="nextarrival">Next Arrival</th>
-                    <th scope="col" id="minutesaway">Minutes Away</th>
+                    <th scope="col" id="trainname"><strong>Train Name</strong></th>
+                    <th scope="col" id="destination"><strong>Destination</strong></th>
+                    <th scope="col" id="frequency"><strong>Frequency (min)</strong></th>
+                    <th scope="col" id="nextarrival"><strong>Next Arrival</strong></th>
+                    <th scope="col" id="minutesaway"><strong>Minutes Away</strong></th>
                   </tr>
                 </thead>
                 <tbody id="data_table">
@@ -42,7 +42,9 @@
               </table>
 
 
-              <div class="container">
+           <div class="container rounded border border-primary" id="form">
+             <div class="container" id="form-header"><h3>Input Train Information:</h3></div>
+                
               <form role="form">
                     <div class="form-group row">
                       <label for="name-input">Train Name:</label>
@@ -63,6 +65,7 @@
                     <button class="btn btn-outline-primary" id="add-train" type="submit">Submit</button>
                   </form>
                 </div>
+            </div>
 
 
 <!-- <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script> -->
